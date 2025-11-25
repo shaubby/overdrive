@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg version="1.1" width="128" height="64" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
+<rect x="0" y="0" width="128" height="7" fill="#0F1240" />
+<rect x="0" y="7" width="7" height="57" fill="#0F1240" />
+<rect x="7" y="7" width="51" height="1" fill="#90FFB7" />
+<rect x="58" y="7" width="12" height="57" fill="#0F1240" />
+<rect x="70" y="7" width="51" height="1" fill="#78F1FF" />
+<rect x="121" y="7" width="7" height="57" fill="#0F1240" />
+<rect x="7" y="8" width="1" height="50" fill="#90FFB7" />
+<rect x="8" y="8" width="49" height="49" fill="#0F1240" />
+<rect x="57" y="8" width="1" height="50" fill="#90FFB7" />
+<rect x="70" y="8" width="1" height="50" fill="#78F1FF" />
+<rect x="71" y="8" width="49" height="49" fill="#0F1240" />
+<rect x="120" y="8" width="1" height="50" fill="#78F1FF" />
+<rect x="8" y="57" width="49" height="1" fill="#90FFB7" />
+<rect x="71" y="57" width="49" height="1" fill="#78F1FF" />
+<rect x="7" y="58" width="51" height="6" fill="#0F1240" />
+<rect x="70" y="58" width="51" height="6" fill="#0F1240" />
+</svg>

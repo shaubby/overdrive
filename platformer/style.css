@@ -1,0 +1,53 @@
+.content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+    font-size: 20px;
+}
+.container {
+    background-color: #0a0d2058;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.column {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.right {
+    border-left: 2px solid white;
+}
+body {
+    padding: 50px;
+    font-family: 'pixel';
+    background-color: #222c6a;
+    line-height: 1.2;
+}
+
+p {
+    margin-bottom: 5px;
+}
+
+.header {
+    font-size: 40px;
+}
+.bold {
+    color: #e99997;
+    
+}
+span {
+    color: #e99997;
+}
+.green {
+    color: #b9dc8e;
+}
+a {
+    color: #9cdcc4;
+}
+
+@font-face {
+  font-family: 'pixel'; /* Choose any name you like */
+  src: url('/assets/PixelOperator.ttf') format('truetype'); /* Specify the path to your file */
+  font-weight: normal; /* Optional: define weight if the font has only one */
+  font-style: normal; /* Optional: define style */
+}
