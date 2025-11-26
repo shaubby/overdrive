@@ -3,15 +3,17 @@
     <body>
         <div class="container">
             
+            <!-- ------------------------- INTRO -------------------------------- -->
             <div class="content">
                 <div class="column left">
-                    <p class="header">orpheus jump</p>
-                    <p class="bold"> hi! </p>
+                    <p class="header">heidi jump</p>
+                    <p> hi! </p>
                     
-                    <p>welcome to my super cool guide to make a super cool game: <br/> <span>orpheus jump! </p>
+                    <p>welcome to my super cool guide to make a super cool game: <br/> <span>heidi jump! </p>
                 </div>
                 <div class="column right">
-                    :insert video:
+                    <br/>
+                    <img src="assets/game.gif" width="100%"/>
                 </div> 
             </div>
 
@@ -19,28 +21,37 @@
                 <div class="column left">
                     <p>first, make sure to install gamemaker and create a blank project: <a target="_blank" href="https://gamemaker.io/en/download">https://gamemaker.io/en/download</a> </p>
                     <p>also, download my assets here: :insert link to asset pack: </p>
-
-                    <p class="green">lets take a tour of the gamemaker editor --> </p>
                 </div>
                 <div class="column right">
                 </div> 
             </div>
+
+            <!-- ------------------------- SPRITES -------------------------------- -->
 
             <div class="content">
                 <div class="column left">
                     <hr/>
                     <p class="header">sprites</p>
                     <p>sprites are the images of your game. they represent your platforms, backgrounds, and your orpheus.</p>
-                    <p>to make a sprite, right click on the <span>Sprites</span> folder and click <span>Create Sprite</span> and call it <span>sPlayer</span>. </p>
+                    <p>to make a sprite, right click on the <span>Sprites</span> folder in the <span>Asset Browser</span> on the left. Then, click <span>Create Sprite</span> and call it <span>sPlayer</span>. </p>
                     <p>(you can call it whatever you want, but i promise this naming scheme makes things super easy) </p>
+                </div>
+                <div class="column right">
+                    <hr/>
+                    <img src="assets/sprites.png" width="50%"/>
+                </div> 
+            </div>
+            <div class="content">
+                <div class="column left">
                     <p>now, you can import your sprite! normally you should make your own sprite but i made one for you this time. you can just hit <span>Import</span> and select the player sprite from my asset pack: :link: </p>
                     <p>notice that each of these sprites are 16x16 pixels. generally, pixel art is done on a grid, where each sprite is either 16x16 pixels or 32x32 pixels. this makes everything look neat and super easy to work with.</p>
                 </div>
                 <div class="column right">
-                    <hr/>
-                    more text
+                    <img src="assets/sprites-import.png" width="100%"/>
                 </div> 
             </div>
+
+            <!-- ------------------------- OBJECTS -------------------------------- -->
 
             <div class="content">
                 <div class="column left">
@@ -49,28 +60,230 @@
                     <p>lets make some <span>objects</span> now!</p>
                     <p>sprites are the images of your game: by themself they can’t really do much, but you can attach them to objects to make some really cool things. </p>
                     <p>right click on the <span>Objects</span> folder and click <span>Create -> Object</span>. call it <span>oPlayer</span> and assign the <span>sPlayer</span> sprite to it. here, you can create <span>Events</span> to add code your objects, but we can wait and deal with that later. </p>
-                    <p>now, go back and do it again for the flag, platforms and spikes! make sure to import the sprites and attach them to objects.</p>                </div>
+                </div>
                 <div class="column right">
                     <hr/>
-                    more text
+                    <br/>
+                    <img src="assets/objects.png" width="100%"/>
+                    
                 </div> 
             </div>
 
+            <div class="content">
+                <div class="column left">
+                    <p>now, go back and do it again for the tree, platforms and spikes! make sure to import the sprites and attach them to objects. </p>
+                    <p class="green">(double click on an object/sprite in the asset browser to open it)</p>                
+                </div>
+                <div class="column right">
+                    <img src="assets/all-objects.png" width="50%"/>  
+                </div> 
+            </div>
+
+            <!-- ------------------------- ROOMS -------------------------------- -->
 
             <div class="content">
                 <div class="column left">
                     <hr/>
                     <p class="header">rooms</p>
                     <p>now that we’ve created so many objects, it’s time to add them to your level!</p>
-                    <p>sprites are the images of your game: by themself they can’t really do much, but you can attach them to objects to make some really cool things. </p>
-                    <p>right click on the <span>Objects</span> folder and click <span>Create -> Object</span>. call it <span>oPlayer</span> and assign the <span>sPlayer</span> sprite to it. here, you can create <span>Events</span> to add code your objects, but we can wait and deal with that later. </p>
-                    <p>now, go back and do it again for the flag, platforms and spikes! make sure to import the sprites and attach them to objects.</p>                </div>
+                    <p>click on Rooms and double click Room1 to open it. </p>
+                    <p> the default room size is pretty big, so lets change it 320 x 180 in the Inspector on the left. you should also change the grid size to 16x16 so the objects snap to the grid. </p>
+                </div>
+                <div class="column right">
+                    
+                    <hr/>
+                    <img src="assets/room-size.png" width="50%"/>
+                    <img src="assets/grids.png" width="100%"/>
+                </div> 
+            </div>
+
+            <div class="content">
+                <div class="column left">
+                    <p>you can drag in the objects from the asset browser into the room, or you can hold alt and click and drag to paint an object into the room. go ahead and make a level! here’s what i made -></p>                
+                </div>
+                <div class="column right">
+                    <img src="assets/level.png" width="100%"/>
+                </div> 
+            </div>
+
+            <div class="content">
+                <div class="column left">
+                    <hr/>
+                    <p>now, go ahead and switch to an html5 build in the top right corner and hit play. you might be prompted to sign in -> </p>
+                </div>
+                <div class="column right"> 
+                    <hr/>
+                    <img src="assets/html.png" width="100%"/>
+                    <img src="assets/play.png" width="100%"/>
+                </div> 
+            </div>
+
+            <div class="content">
+                <div class="column left">
+                    <hr/>
+                    <p> you'll notice that the game is really small and blurry, so lets fix that!</p>
+                </div>
                 <div class="column right">
                     <hr/>
-                    more text
+                    <img src="assets/blurry.png" width="100%"/>
                 </div> 
+            </div>
+
+            <div class="content">
+                <div class="column left">
+                    <p>go to Settings -> HTML% -> Graphics and uncheck Interpolate colours between pixels. this makes your art "pixel perfect", not ideal more more high-resultion art but needed for pixel art.</p>
+                    <p>next, go to the room editor, and in the Inspector on the left, enable vieports, make Viewpot 0 visible, and change the Camera Properties of Viewport 0 to 320x180</p>
+                    <p>now, your game should be big and clear, but it still doesn't do anything yet</p>
+                </div>
+                <div class="column right">
+                    <img src="assets/setting.png" width="100%"/>
+                    <img src="assets/camera.png" width="50%"/>
+                </div> 
+            </div>
+
+            <!-------------------- EVENTS ------------------------->
+            <div class="content">
+                <div class="column left">
+                    <hr/>
+                    <p class="header">events</p>
+                    <p> first open the <span>oPlayer</span> object (double click on it in the asset browser), click <span>Add Event,</span> and create a <span>Create</span> event and a <span>Step</span> event</p>
+                    <p class="green">click GML Code if prompted</p>
+                </div>
+                <div class="column right">
+                    <hr/>
+                    <img src="assets/events.png" width="100%"/>
+                </div> 
+            </div>
+
+            <div class="content-full">
+                <div class="full-column">
+                    <hr/>
+                    <p class="header">create event</p>
+                    <p>next, add the following code to the <span>Create</span> event:</p>
+                    <pre class="code">
+x_speed = 0; <br/>
+y_speed = 0; <br/>
+movement_speed = 1; <br/>
+grav = 0.5;</pre>
+                    <p>this code creates four different variables which we will use for heidi's movement: horizontal speed, vertical speed, gravity, and movement_speed</p>
+                    <p>the <span>Create</span> event only runs when an object is created, so x and y speeds start off at 0 since heidi is initially still</p>
+            
+                </div>
+            </div>
+
+            <div class="content-full">
+                <div class="full-column">
+                    <hr/>
+                    <p class="header">step event</p>
+                    <p>now, open the <span>Step</span> event.</p>
+                    <p>the Step event runs every step (60 times per second), so any code here will be constantly running</p>
+                    <p>first, lets make sure each step starts of with no horizontal motion and heidi has gravity in the y-direction: </p>
+                    <pre class="code">
+x_speed = 0; <span class="green">// reset horizontal speed </span><br/>
+y_speed += grav; <span class="green">// add gravity to y_speed</span><br/></pre>
+                    <p>the comments  <span class="green"> (the text in green) </span>are optional and don't impact the code, they are only there to keep things organized</p>
+                    <p>next, add this code so that heidi can move left and right when the arrow keys are pressed:</p>
+                    <pre class="code">
+if keyboard_check(vk_right) { <span class="green">// if the right arrow key is pressed</span><br/>
+    x_speed = movement_speed; <span class="green">// set the horizontal speed to heidi's movement_speed</span><br/>
+} else if keyboard_check(vk_left) { <span class="green">// otherwise, if the left arrow key is pressed</span><br/>
+    x_speed = -movement_speed; <span class="green">// set the horizontal speed to negative heidi's movement_speed, making her move left</span><br/>
+}</pre>
+                    <p>finally, add this code at the end of the <span>Step</span> event to update heidi's position based on her speed. </p>
+                    <pre class="code">
+x += x_speed; <br/>
+y += y_speed;</pre>
+                    <p>now, test out your code by hitting play!</p>
+                    <hr/>
+                </div>
+            </div>
+            
+            <!----------------------------- SOLIDS --------------------------->
+            <div class="content">
+                <div class="column left">
+                    <p class="header">solids</p>
+                    <p>im sure you noticed that heidi fell straight through the floor, so lets fix that!</p>
+                    <p>first create a new object called <span>oSolid</span>, this will function as a parent object for all of our solid objects that heidi can collide with</p>
+                    <p>then, go to <span>Parent</span> and add <span>oPlatform</span> as a child object</p>
+                </div>
+                <div class="column right">
+                    <img src="assets/parent.png" width="100%"/>
+                </div>
+
+            </div>
+
+            <div class="content-full">
+                <div class="full-column">
+                    <p>now go back to the <span>Step</span> event in <span>oPlayer</span> and add this code to let her jump and collide with platforms:</p>
+                    <pre class="code">
+if (place_meeting(x, y + 1, oSolid)) { <span class="green">// if heidi is on the ground</span><br/>
+    if (keyboard_check_pressed(vk_up)) { <span class="green">// and the up arrow key is pressed</span><br/>
+        y_speed = -10; <span class="green">// make heidi jump by setting her y_speed to a negative value</span><br/>
+    } else { <span class="green">// otherwise, if heidi is on the ground but not jumping</span><br/>
+        y_speed = 0; <span class="green">// set her y_speed to 0 so she doesn't fall through the ground</span><br/>
+    }<br/>
+}</pre>
+                    <p>next change this code:</p>
+                    <pre class="code">
+x += x_speed; <br/>
+y += y_speed;</pre>
+                    <p>to this:</p>
+                    <pre class="code">
+move_and_collide(x_speed, y_speed, oSolid);</pre>
+                    <p>move_and_collide automatically handles collisions for us, so heidi won't fall through the ground anymore!</p>
+                    <p>also, place_meeting checks if the current object (<span>oPlayer</span>) occupies the same space as another object (<span>oSolid</span>). we use y + 1 so we can check if heidi will collide with oSolid if she falls any further.</p>
+                    <p>now, you can try out your game! the movement will still feel a little bit weird, so mess with the jump speed, gravity, and movement speed to get it feeling right!</p>
+                </div>  
+            </div>
+
+            <div class="content-full">
+                <div class="full-column">
+                    <hr/>
+                    <p class="header">polishing up</p>
+                    <p>we're almost done, lets just finish up a few more things</p>
+                    <p>first, we should make the spikes kill the player, add this code the the player <span>Step</span> event:</p>
+                    <pre class="code">
+if (place_meeting(x, y, oSpikes)) { <span class="green">// if heidi collides with the spikes</span><br/>
+    room_restart() <span class="green">// restart the level</span><br/>
+}</pre>
+                    <p>let's also restart the level when the player goes out of bounds</p>
+                    <pre class="code">
+if (y > room_height or y < 0 or x > room_width or x < 0</0>) {<span class="green"> // if the player is outside of the room</span><br/>
+    room_restart(); <br/>
+}</pre>
+
+                    <p>also, lets make heidi face the direction she's going by adding these lines:</p>
+                    <pre class="code">
+if keyboard_check(vk_right) {<br/>
+    x_speed = movement_speed; <br/>
+    <span>image_xscale = -1;</span> <span class="green">// flip heidi's sprite so she faces right</span><br/>
+} else if keyboard_check(vk_left) {<br/>
+    x_speed = -movement_speed; <br/>
+    <span>image_xscale = 1;</span> <span class="green">// reset her sprite so she faces left</span><br/>
+}</pre>
+                    <p>you'll realize that heidi flips directions really weirdly, this is because her center isn't properly configured.</p>
+                    <p>go to the sprit <span>sPlayer</span> and change the center to <span>Bottom Centre</span></p>
+                    <img src="assets/sprite-center.png" width="80%"/>
+                </div>
+            </div>
+            <div class="content">
+                <div class="column left">
+                    <p class="header">what's next?</p>
+                    <p><span>yay you did it!</span></p>
+                    <p>now what to do next? take some time and turn this template into a cool little game, add your own art and mechanics and make it your own! here are some ideas:</p>
+                    <p> - replace the art and add a background! heidi jump is cool, but everyone who uses this guide makes it, so you should use your own or find some art (16x16 or something else) on itch.io</p>
+                    <p> - make the level bigger, change the room size, make the camera follow the player, there's so many possibilities!</p>
+                    <p> - add some more levels and a win screen, we didn't do anything with the tree for a reason, it's for you to decide what happens when heidi reaches the tree</p>
+                    <p> - add some cool mechanics, double jumps, collectables, its entirely up to you!</p>
+                    <p> i didn't teach you how to do these things, but there are lots of guides and tutorials online to help you out!</p>
+                    <p>happy coding!</p>
+                    <p> - rishabh</p>
+                </div>
+                <div class="column right">
+                    <img src="assets/game.gif" width="100%"/>
+                </div>
             </div>
 
         </div>
     </body>
-</html>x
+</html>

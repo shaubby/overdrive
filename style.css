@@ -1,3 +1,6 @@
+html {
+  background-color: #0f1240; /* The desired overscroll color (e.g., a shade of orange) */
+}
 .header {
     background: url('/assets/bg.svg');
     background-size: cover;
@@ -5,15 +8,32 @@
     width: 100%;
     height: 100vh;
     display: flex;
-
-    justify-content: center;
+    flex-direction: column;
     text-align: center;
-    background-position: center bottom; 
+    background-position: center bottom;
+    position: relative;
+}
+.header-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 10;
 }
 body {
     margin: 0;
     padding: 0;
     font-family: 'pixel';
+    overflow-x: hidden;
+}
+.header-text {
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+    transform: translateY(0);
 }
 .logo {
     width: 60vw;
@@ -26,14 +46,23 @@ body {
 .section-2 {
     background: #0f1240;
     width: 100%;
-    height: 600px;
     display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.footer {
+    background: #0f1240;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font: 'pixel';
+    font-size: 50px;
+    padding-bottom: 30px;
     grid-template-columns: 1fr 1fr;
 }
 .section-3 {
     background: #0f1240;
     width: 100%;
-    height: 1000px;
 }
 .how-it-works {
     color: white;
@@ -43,14 +72,14 @@ body {
     border: #90ffb7 4px solid;
     font-size: 30px;
     margin: 40px;
-    padding-left: 20px;
+    padding: 20px;
 }
 .column-2 {
     border: #78f1ff 4px solid;
     font-size: 30px;
     margin: 40px;
     color: white;
-    padding-left: 20px;
+    padding: 30px;
 }
 .container {
     padding: 50px;
@@ -61,13 +90,29 @@ body {
     justify-content: center;
 }
 .buttons {
-    width: 80vw;
+    width: 100vw;
 }
 .title {
     color: white;
     font-size: 60px;
     margin-bottom: 30px;
 }
+.buttons-container {
+    position: relative;
+}
+.shooter {
+    position: absolute;
+    width: 39.6%;
+    height: 32.5%;
+    top: 27.5%;
+    left: 31%;
+    transform: translate(-50%, -50%);
+    border: none;
+    cursor: pointer;
+    image-rendering: pixelated; /* Ensures crisp edges when scaled up */
+    image-rendering: crisp-edges; /* Fallback for better browser compatibility */
+}
+
 @font-face {
   font-family: 'pixel'; /* Choose any name you like */
   src: url('/assets/PixelOperator.ttf') format('truetype'); /* Specify the path to your file */

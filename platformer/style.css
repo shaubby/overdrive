@@ -4,9 +4,23 @@
     grid-template-columns: 1fr 1fr;
     color: white;
     font-size: 20px;
+    font: 'pixel';
+}
+.content-full {
+    width: 100%;
+    display: grid;
+    color: white;
+    font-size: 20px;
+    font: 'pixel';
+
+}
+.full-column {
+    padding-left:  50px;
+    padding-right: 50px;
 }
 .container {
-    background-color: #0a0d2058;
+    background-color: #0a0d20f9;
+    border: 2px solid white;
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -19,17 +33,27 @@
 }
 body {
     padding: 50px;
-    font-family: 'pixel';
-    background-color: #222c6a;
-    line-height: 1.2;
+    font-family: 'regular';
+    background: 
+        url('/assets/bg2.svg') center bottom no-repeat fixed,
+        url('/assets/bg.svg') center bottom no-repeat fixed;
+    background-size: auto 100vh;
+
+    line-height: 1.6;
+}
+
+img {
+    margin:10px ;
 }
 
 p {
     margin-bottom: 5px;
+    font-size: 16px;
 }
 
 .header {
-    font-size: 40px;
+    font-size: 50px;
+    font-family: 'pixel';
 }
 .bold {
     color: #e99997;
@@ -44,7 +68,21 @@ span {
 a {
     color: #9cdcc4;
 }
+.code {
+    background-color: #22243a;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-family: 'regular';
+    font-size: 15px;
+    line-height: 1;
+}
 
+@font-face {
+  font-family: 'regular'; /* Choose any name you like */
+  src: url('/assets/regular.ttf') format('truetype'); /* Specify the path to your file */
+  font-weight: normal; /* Optional: define weight if the font has only one */
+  font-style: normal; /* Optional: define style */
+}
 @font-face {
   font-family: 'pixel'; /* Choose any name you like */
   src: url('/assets/PixelOperator.ttf') format('truetype'); /* Specify the path to your file */

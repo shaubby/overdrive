@@ -1,9 +1,10 @@
 <html>
     <body>
         <div class="header">
+            <img src="/assets/bg2.svg" class="header-bg"/>
             <div class="header-text">
                 <img src="/assets/logo.svg" class="logo"/> 
-                <p class="subtitle"> make a game in gamemaker, get cool stuff! <br/> a hack club ysws</p>
+                <p class="subtitle"> make a game in gamemaker, get cool stuff! <br/> a hack club ysws by rishabh agarwal</p>
                 <p class="subtitle"></p>
             </div>
         </div>
@@ -16,7 +17,9 @@
                 <p class="steps">2. one of our super cool gamemaker tutorials</p>
                 <p class="steps">3. add your own twist to it by changing the art and adding mechanics. make it fun and personal!</p>
                 <p class="steps">4. upload it here and give us feedback to get cool stuff!</p>
-                <p class="steps">:yay:</p>
+                <center>
+                <img width="80px" src="https://emoji.slack-edge.com/T09V59WQY1E/yay/47296c029c8ee253.gif"/>
+                </center>
             </div>  
             
         </div>
@@ -24,9 +27,22 @@
             
             <div class="container">
                 <p class="title">now, choose your path!</p>
-                <img src="/assets/buttons.svg" class="buttons"/>
+                <div class="buttons-container">
+                    <img src="/assets/shooter.gif" class="shooter"/>
+                    <img src="/assets/buttons.svg" class="buttons"/>
+                </div>
             </div>
+        </div>
+        <div class="footer">
+            made with ❤️ from hack club
         </div>
     </body>
     <link rel="stylesheet" href="style.css">
+    <script>
+        window.addEventListener('scroll', () => {
+            const headerText = document.querySelector('.header-text');
+            const scrollY = window.scrollY;
+            headerText.style.transform = `translateY(${scrollY * 0.40}px)`;
+        });
+    </script>
 </html>
