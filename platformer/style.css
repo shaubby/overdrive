@@ -35,8 +35,10 @@ body {
     padding: 50px;
     font-family: 'regular';
     background: 
+        url('/assets/glow.svg') center bottom no-repeat fixed,
         url('/assets/bg2.svg') center bottom no-repeat fixed,
-        url('/assets/bg.svg') center bottom no-repeat fixed;
+        url('/assets/stars.svg') center bottom no-repeat fixed,
+        url('/assets/bg3.svg') center bottom no-repeat fixed;
     background-size: auto 100vh;
 
     line-height: 1.6;

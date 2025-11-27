@@ -1,10 +1,13 @@
 <html>
     <body>
         <div class="header">
+            
+            <img src="/assets/stars.svg" class="stars"/>
             <img src="/assets/bg2.svg" class="header-bg"/>
+            <img src="/assets/glow.svg" class="header-bg"/>
             <div class="header-text">
-                <img src="/assets/logo.svg" class="logo"/> 
-                <p class="subtitle"> make a game in gamemaker, get cool stuff! <br/> a hack club ysws by rishabh agarwal</p>
+                <img src="/assets/logo2.svg" class="logo"/> 
+                <p class="header-subtitle"> make a game in gamemaker, get cool stuff! <br/> a hack club ysws by rishabh agarwal</p>
                 <p class="subtitle"></p>
             </div>
         </div>
@@ -29,6 +32,7 @@
                 <p class="title">now, choose your path!</p>
                 <div class="buttons-container">
                     <img src="/assets/shooter.gif" class="shooter"/>
+                    <div class="platformer" onclick="window.open('/platformer/index.html');"></div>
                     <img src="/assets/buttons.svg" class="buttons"/>
                 </div>
             </div>
@@ -39,10 +43,32 @@
     </body>
     <link rel="stylesheet" href="style.css">
     <script>
-        window.addEventListener('scroll', () => {
+        (function() {
             const headerText = document.querySelector('.header-text');
-            const scrollY = window.scrollY;
-            headerText.style.transform = `translateY(${scrollY * 0.40}px)`;
-        });
+            const stars = document.querySelector('.stars');
+            let latestScrollY = 0;
+            let ticking = false;
+
+            function onScroll() {
+                latestScrollY = window.scrollY;
+                if (!ticking) {
+                    window.requestAnimationFrame(update);
+                }
+                ticking = true;
+            }
+
+            function update() {
+                const y = latestScrollY;
+                // header text moves at ~40% of scroll
+                if (headerText) headerText.style.transform = `translateY(${y * 0.40}px)`;
+                // stars move much slower for a subtle parallax (e.g. 10%)
+                if (stars) stars.style.transform = `translateY(${y * 0.20}px)`;
+                ticking = false;
+            }
+
+            window.addEventListener('scroll', onScroll, { passive: true });
+            // initial position
+            update();
+        })();
     </script>
 </html>
