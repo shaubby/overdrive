@@ -2,7 +2,7 @@ html {
   background-color: #0f1240; /* The desired overscroll color (e.g., a shade of orange) */
 }
 .header {
-    background: url('/assets/bg3.svg');
+    background: url('assets/bg10.svg');
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -36,6 +36,7 @@ html {
     opacity: 0.7; /* subtle fade if desired */
 }
 .how-it-works {
+    width: 100vw;
     image-rendering: pixelated;
 }
 body {
@@ -104,7 +105,7 @@ a {
     color: white;
     font-size: 50px;
 }
-.column-1 {
+/* .column-1 {
     border: #90ffb7 4px solid;
     font-size: 30px;
     margin: 40px;
@@ -112,7 +113,7 @@ a {
     box-shadow:
     0 0 10px #90ffb7b8,
     inset 0 0 10px #90ffb7b8; 
-}
+} */
 .column-2 {
     border: #78f1ff 4px solid;
     font-size: 30px;
@@ -168,7 +169,7 @@ a {
 }
 @font-face {
   font-family: 'pixel'; /* Choose any name you like */
-  src: url('/assets/PixelOperator.ttf') format('truetype'); /* Specify the path to your file */
+  src: url('assets/PixelOperator.ttf') format('truetype'); /* Specify the path to your file */
   font-weight: normal; /* Optional: define weight if the font has only one */
   font-style: normal; /* Optional: define style */
 }

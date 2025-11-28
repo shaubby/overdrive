@@ -35,10 +35,10 @@ body {
     padding: 50px;
     font-family: 'regular';
     background: 
-        url('/assets/glow.svg') center bottom no-repeat fixed,
-        url('/assets/bg2.svg') center bottom no-repeat fixed,
-        url('/assets/stars.svg') center bottom no-repeat fixed,
-        url('/assets/bg3.svg') center bottom no-repeat fixed;
+        url('assets/glow.svg') center bottom no-repeat fixed,
+        url('assets/bg2.svg') center bottom no-repeat fixed,
+        url('assets/stars.svg') center bottom no-repeat fixed,
+        url('assets/bg3.svg') center bottom no-repeat fixed;
     background-size: auto 100vh;
 
     line-height: 1.6;
@@ -81,13 +81,13 @@ a {
 
 @font-face {
   font-family: 'regular'; /* Choose any name you like */
-  src: url('/assets/regular.ttf') format('truetype'); /* Specify the path to your file */
+  src: url('./assets/regular.ttf') format('truetype'); /* Specify the path to your file */
   font-weight: normal; /* Optional: define weight if the font has only one */
   font-style: normal; /* Optional: define style */
 }
 @font-face {
   font-family: 'pixel'; /* Choose any name you like */
-  src: url('/assets/PixelOperator.ttf') format('truetype'); /* Specify the path to your file */
+  src: url('./assets/PixelOperator.ttf') format('truetype'); /* Specify the path to your file */
   font-weight: normal; /* Optional: define weight if the font has only one */
   font-style: normal; /* Optional: define style */
 }
