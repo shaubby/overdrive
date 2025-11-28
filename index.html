@@ -6,19 +6,20 @@
             <img src="/assets/bg2.svg" class="header-bg"/>
             <img src="/assets/glow.svg" class="header-bg"/>
             <div class="header-text">
-                <img src="/assets/logo2.svg" class="logo"/> 
-                <p class="header-subtitle"> make a game in gamemaker, get cool stuff! <br/> a hack club ysws by rishabh agarwal</p>
-                <p class="subtitle"></p>
+                <img src="/assets/logo2.png" class="logo"/> 
+                <p class="header-subtitle"> make a game in gamemaker, get cool stuff! <br/> a <a href="https://hackclub.com" target="_blank">hack club</a> ysws by rishabh agarwal</p>
             </div>
         </div>
         <div class="section-2"> 
+            <!-- <img class="how-it-works" src="/assets/section-2-redone.png"/> -->
             <div class="column-1">
                 <p class="how-it-works">how it works</p>
             </div>
             <div class="column-2">
-                <p class="steps">1. join #overdrive on the hack club slack!</p>
-                <p class="steps">2. one of our super cool gamemaker tutorials</p>
-                <p class="steps">3. add your own twist to it by changing the art and adding mechanics. make it fun and personal!</p>
+                <p class="steps">1. join <a href="https://hackclub.enterprise.slack.com/archives/C09CSSU3ZH8">#overdrive</a> on the hack club slack!</p>
+                <p class="steps">2. follow one of our super cool gamemaker tutorials listed below </p>
+                <p class="steps">3. make it fun and personal changing the art and adding mechanics. </p>
+
                 <p class="steps">4. upload it here and give us feedback to get cool stuff!</p>
                 <center>
                 <img width="80px" src="https://emoji.slack-edge.com/T09V59WQY1E/yay/47296c029c8ee253.gif"/>
@@ -38,7 +39,8 @@
             </div>
         </div>
         <div class="footer">
-            made with ❤️ from hack club
+            made with ❤️ from a cyberpunk cafe in a floating city among the stars <br/>
+            -rishabh agarwal
         </div>
     </body>
     <link rel="stylesheet" href="style.css">
@@ -46,29 +48,37 @@
         (function() {
             const headerText = document.querySelector('.header-text');
             const stars = document.querySelector('.stars');
-            let latestScrollY = 0;
-            let ticking = false;
+            let targetY = 0;
+            let displayedHeaderY = 0;
+            let displayedStarsY = 0;
 
-            function onScroll() {
-                latestScrollY = window.scrollY;
-                if (!ticking) {
-                    window.requestAnimationFrame(update);
-                }
-                ticking = true;
+            // update target on scroll (passive for performance)
+            window.addEventListener('scroll', () => {
+                targetY = window.scrollY || 0;
+            }, { passive: true });
+
+            // smoothing factor (0 < K < 1). Larger = quicker response, less smoothing.
+            // Increased to make lerp less extreme / more responsive.
+            const K = 0.18;
+
+            function tick() {
+                // compute target transforms
+                const headerTarget = targetY * 0.20; // header moves at 40%
+                const starsTarget = targetY * 0.1;  // stars move at 10%
+
+                // lerp towards target values for smooth motion
+                displayedHeaderY += (headerTarget - displayedHeaderY) * K;
+                displayedStarsY += (starsTarget - displayedStarsY) * K;
+
+                // apply GPU-accelerated transforms
+                if (headerText) headerText.style.transform = `translate3d(0, ${displayedHeaderY}px, 0)`;
+                if (stars) stars.style.transform = `translate3d(0, ${displayedStarsY}px, 0)`;
+
+                requestAnimationFrame(tick);
             }
 
-            function update() {
-                const y = latestScrollY;
-                // header text moves at ~40% of scroll
-                if (headerText) headerText.style.transform = `translateY(${y * 0.40}px)`;
-                // stars move much slower for a subtle parallax (e.g. 10%)
-                if (stars) stars.style.transform = `translateY(${y * 0.20}px)`;
-                ticking = false;
-            }
-
-            window.addEventListener('scroll', onScroll, { passive: true });
-            // initial position
-            update();
+            // kick off the loop
+            requestAnimationFrame(tick);
         })();
     </script>
 </html>
