@@ -1,0 +1,290 @@
+<html>
+    <head>
+        <title>the legend of heidi</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            
+            <!-- ------------------------- INTRO -------------------------------- -->
+            <!-- ------------------------- INTRO -------------------------------- -->
+            <div class="content">
+                <div class="column left">
+                    <p class="header">the legend of heidi</p>
+                    <p> hi! </p>
+                    
+                    <p>welcome to my super cool guide to make a super cool game: <br/> <span>the legend of heidi! </p>
+                </div>
+                <div class="column right">
+                    <br/>
+                    <img src="assets/game.gif" width="100%"/>
+                </div> 
+            </div>
+
+            <div class="content">
+                <div class="column left">
+                    <p>first, make sure to install gamemaker and create a blank project: <a target="_blank" href="https://gamemaker.io/en/download">https://gamemaker.io/en/download</a> </p>
+                    <p>also, download my assets here: <a target="_blank" href="https://hc-cdn.hel1.your-objectstorage.com/s/v3/f1c3d4abdd4a6b5d2766c866f626bfe025ac8405_assets.zip">link</a></p>
+                </div>
+                <div class="column right">
+                </div> 
+            </div>
+
+            <!-- ------------------------- SPRITES -------------------------------- -->
+
+            <div class="content">
+                <div class="column left">
+                    <hr/>
+                    <p class="header">sprites</p>
+                    <p>sprites are the images of your game. they represent your platforms, backgrounds, and your heidi.</p>
+                    <p>to make a sprite, right click on the <span>Asset Browser</span> and click create group and call it <span>Sprites</span> Then, right click on that folder and click <span>Create -> Sprite</span> and call it <span>sPlayer</span>. </p>
+                    <p>(you can call it whatever you want, but i promise this naming scheme makes things super easy) </p>
+                </div>
+                <div class="column right">
+                    <hr/>
+                    <img src="assets/create-group.png" width="50%"/>
+                </div> 
+            </div>
+            <div class="content">
+                <div class="column left">
+                    <p>now, you can import your sprite! normally you should make your own sprite but i made one for you this time. you can just hit <span>Import</span> and select the player sprite from my asset pack: :link: </p>
+                    <p>notice that each of these sprites are 16x16 pixels. generally, pixel art is done on a grid, where each sprite is either 16x16 pixels or 32x32 pixels. this makes everything look neat and super easy to work with.</p>
+                </div>
+                <div class="column right">
+                    <img src="assets/sprites-import.png" width="100%"/>
+                </div> 
+            </div>
+
+            <!-- ------------------------- OBJECTS -------------------------------- -->
+
+            <div class="content">
+                <div class="column left">
+                    <hr/>
+                    <p class="header">objects</p>
+                    <p>lets make some <span>objects</span> now!</p>
+                    <p>sprites are the images of your game: by themself they can’t really do much, but you can attach them to objects to make some really cool things. </p>
+                    <p>create a new folder for <span>Objects</span>, and right click on it and select <span>Create -> Object</span>. call it <span>oPlayer</span> and assign the <span>sPlayer</span> sprite to it. here, you can create <span>Events</span> to add code your objects, but we can wait and deal with that later. </p>
+                </div>
+                <div class="column right">
+                    <hr/>
+                    <br/>
+                    <img src="assets/objects.png" width="100%"/>
+                    
+                </div> 
+            </div>
+
+            <div class="content">
+                <div class="column left">
+                    <p>now, go back and do it again for the tree, slime! make sure to import the sprites and attach them to objects. </p>
+                    <p class="green">(double click on an object/sprite in the asset browser to open it)</p>                
+                </div>
+                <div class="column right">
+                    <img src="assets/all-objects.png" width="50%"/>  
+                </div> 
+            </div>
+
+            <!-- ------------------------- ROOMS -------------------------------- -->
+
+            <div class="content">
+                <div class="column left">
+                    <hr/>
+                    <p class="header">rooms</p>
+                    <p>now that we’ve created so many objects, it’s time to add them to your level!</p>
+                    <p>Double click <span>Room1</span> to open it. </p>
+                    <p> the default room size is pretty big, so lets change it 320 x 180 in the <span>Inspector</span> on the left. you should also change the grid size to 16x16 so the objects snap to the grid. </p>
+                </div>
+                <div class="column right">
+                    
+                    <hr/>
+                    <img src="assets/room-size.png" width="50%"/>
+                    <img src="assets/grids.png" width="100%"/>
+                </div> 
+            </div>
+
+            <div class="content">
+                <div class="column left">
+                    <p>lets switch the background color to something that looks a little more like grass. in the <span>Inspector</span>, click on the <span>Background</span> layer and switch the <span>Colour</span> to a grassy color, or you can just pick any color you want :)</p>                
+                </div>
+                <div class="column right">
+                    <img src="assets/background.png" width="50%"/>
+                </div> 
+            </div>
+
+            <div class="content">
+                <div class="column left">
+                    <p>now, make a level! switch back to the <span>Instances</span> layer so you can add objects, and then you can drag in the objects from the asset browser into the room, or after selecting an object you can hold alt and click and drag to paint an object into the room. here’s what i made -></p>                
+                </div>
+                <div class="column right">
+                    <img src="assets/level.png" width="100%"/>
+                </div> 
+            </div>
+
+            <div class="content">
+                <div class="column left">
+                    <hr/>
+                    <p>switch to an html5 build (web build) in the top right corner and hit play. you might be prompted to sign in and download the HTML5 module -> </p>
+                </div>
+                <div class="column right"> 
+                    <hr/>
+                    <img src="assets/html.png" width="100%"/>
+                    <img src="assets/play.png" width="100%"/>
+                </div> 
+            </div>
+
+            <div class="content">
+                <div class="column left">
+                    <hr/>
+                    <p> the game will open in a browser, but you'll notice that the game is really small and blurry, so lets fix that!</p>
+                </div>
+                <div class="column right">
+                    <hr/>
+                    <img src="assets/blurry.png" width="100%"/>
+                </div> 
+            </div>
+
+            <div class="content">
+                <div class="column left">
+                    <p>go to Settings -> HTML5 -> Graphics and uncheck <span>Interpolate colours between pixels</span>. this makes your art "pixel perfect", not ideal more more high-resultion art but needed for pixel art.</p>
+                    <p>next, go to the room editor, and in the <span>Inspector</span> on the left, enable viewports, make <span>Viewport 0 visible</span>, and change the <span>Camera Properties</span> of <span>Viewport 0</span> to 320x180 <br/>(not the <span>Viewport Properties</span>!)</p>
+                    <p>now, your game should be big and clear, but it still doesn't do anything yet</p>
+                </div>
+                <div class="column right">
+                    <img src="assets/setting.png" width="100%"/>
+                    <img src="assets/camera.png" width="50%"/>
+                    
+                </div> 
+            </div>
+            <!-------------------- EVENTS ------------------------->
+            <div class="content">
+                <div class="column left">
+                    <hr/>
+                    <p class="header">events</p>
+                    <p> first open the <span>oPlayer</span> object (double click on it in the asset browser), click <span>Add Event,</span> and create a <span>Create</span> event and a <span>Step</span> event (just the normal Step event)</p>
+                    <p class="green">click GML Code if prompted</p>
+                </div>
+                <div class="column right">
+                    <hr/>
+                    <img src="assets/events.png" width="100%"/>
+                </div> 
+            </div>
+            
+            <div class="content-full">
+                <div class="full-column">
+                    <p class="header">create event</p>
+                    <p>next, add the following code to the <span>Create</span> event:</p>
+                    <pre class="code">
+x_speed = 0<br/>
+y_speed = 0<br/>
+movement_speed = 1</pre>
+                    <p>this code creates three different variables which we will use for heidi's movement: horizontal speed, vertical speed, and the overall movement_speed</p>
+                    <p>the <span>Create</span> event only runs when an object is created, so x and y speeds start off at 0 since heidi is initially still. the movement speed refers to the overall speed heidi can move when the player presses the arrow keys</p>
+                </div>
+            </div>
+
+            <div class="content-full">
+                <div class="full-column">
+                    <p class="header">step event</p>
+                    <p>the Step event runs every step (60 times per second), so any code here will be constantly running</p>
+                    <p>lets first check for keyboard input. add this code to the <span>Step</span> event</p>
+                    <pre class="code">
+left = keyboard_check(ord("A")) <br/>
+right = keyboard_check(ord("D"))<br/>
+up = keyboard_check(ord("W"))<br/>
+down = keyboard_check(ord("S"))<br/>
+
+horizontal_input = 0 + right - left <span class="green">// calculates the horizontal input</span><br/>
+vertical_input = 0 + down - up <span class="green">// calculates the horizontal input</span></pre>
+                    <p>this creates 4 variables that will each be 1 if the button is pressed or 0 if it isnt</p>
+                    <p>we use keyboard_check to check if the a key is being pressed</p>
+                    <p>next, we calculate the horizontal input, by using <span>right - left</span>, we make it so that <span>horizontal_input</span> is 1 if the player is moving right, -1 if they're moving left, or 0 if they aren't moving in the horizontal direction</p>
+                    <p>we do the same for vertical movement, with 1 corresponding to downwards, -1 corresponding to upwards, and 0 corresponding to no vertical movement</p>
+                    <p><span class="green"> gamemaker works a lot like an coordinate plane, with positive x values being towards the right and negative x values being towards the left. however, the vertical direction is flipped, with positive y values going downwards and negative y values going upwards </span></p>
+                </div>
+            </div>
+            <div class="content-full">
+                <div class="full-column">
+                    
+                    <p>now, we can do our movement</p>
+                    <pre class="code">
+x += horizontal_input * movement_speed <br/>
+y += vertical_input * movement_speed</pre>
+                    <p>we multiply our input by the movement speed to get our total movement in each direction, and then add that to the x and y position of the player</p>
+                    <p>+= means that we are adding something to a value, so in this case we are adding our movement to the original player position</p>
+                    <p>remember, this happens multiple times a second so it should seem like smooth motion. click play and find out!</p>
+                </div>
+            </div>
+
+            <div class="content-full">
+                <div class="full-column">
+                    <p class="header">fixing our movement</p>
+                    <p>now our heidi can move, but you might find she still feels a little weird to control</p>
+                    <p>first, you can change the movement speed in the <span>Create</span> event. find a speed you like!</p>
+                    <p>next, lets make heidi face the direction she moves. add this to your code:</p>
+                    <pre class="code">
+if(horizontal_input < 0) { <span class="green">// if heidi is moving to the left</span><br/>
+    image_xscale = 1 <span class="green">// make the sprite normal, what heidi already looks like</span><br/>
+} else if (horizontal_input > 0) { <span class="green">// but if shes moving to the right</span><br/>
+    image_xscale = -1 <span class="green">// flip heidi's sprite</span><br/>
+}</pre>
+                    <p>if you try this, you'll notice heidi teleports every time she flips, this is because she flips around the "origin" of her sprite, which isn't the center</p>
+                    <p>open heidis sprite and change the origin from top left to middle centre</p>
+                    <img src="assets/origin.png" />
+                    <p>now it should be working!</p>
+                </div>
+            </div>
+            <div class="content-full">
+                <div class="full-column">
+                    <p class="header">collisions</p>
+                    <p>lets make it so heidi doesn't walk right through the trees now</p>
+                    <p>first, create an object called oSolid, go to <span>Parent</span> and add <span>oTree</span> to its <span>Children</span></p>
+                    <img src="assets/parent.png" width="50%"/>
+                    <p>this will serve as a parent object for all of our solid objects, meaning that we could add all sorts of things to its children like rocks and buildings, and if we check that heidi collides with oSolid it will include collisions with all of its children.</p>
+                    <p>go in your <span>Step</span> event, after we calculate the horizontal and vertical input but before we actually move heidi, and add this:</p>
+                    <pre class="code">
+if(place_meeting(x + horizontal_input * movement_speed, y, oSolid)) { <span class="green">// check if heidi will collide with something if she moves in the x direction</span><br/>
+    horizontal_input = 0 <span class="green">// stop all horizontal movement</span><br/>
+} else if (place_meeting(x, y + vertical_input * movement_speed, oSolid)) { <span class="green">// do the same for vertical movement </span><br/>
+    vertical_input = 0
+}</pre>
+                    <p> place_meeting takes 3 inputs, an x position, y position, and an object to collide with, and will check if the current object (heidi) will overlap with the other object (oSolid) at that point </p>
+                    <p>here, we check if heidi will overlap with a tree if she moves and stop her from moving if she will</p>
+                    <p>go ahead and try it out!</p>
+                </div>
+            </div>
+
+            <div class="content-full">
+                <div class="full-column">
+                    <p class="header">enemies</p>
+                    <p>now its time to make the slimes move towards heidi</p>
+                    <p>i think you can try this by yourself this time, go ahead and make a <span>Create</span> and <span>Step</span> in <span>oSlime</span> and create a variable for movement speed in the create event (same think you did for oPlayer)</p>
+                    <p><span class="green">you cant just call the variable "speed" here since speed is a different variable that is built into gamemaker. it you try it, you'll see that the variable name turns green, and if that ever happens you should choose a different variable name</span></p>
+                    <p>next, the function we use for enemy ai is really simple:</p>
+                    <pre class="code">
+mp_potential_step(oPlayer.x, oPlayer.y, (your movement speed variable), true)</pre>
+                    <p>this is super cool built in gamemaker function that can automatically pick a path for your enemies to move in. you just need the x and y locations that it should try to move towards (in this case the players x and y) and the movement speed</p>
+                    <p>dont worry about the last input, you should just always put true there</p>
+                    <p>now the enemies will run towards you!</p>
+                </div>
+            </div>
+
+            <div class="content-full">
+                <div class="full-column">
+                    <p class="header">next steps</p>
+                    <p>you might have noticed theres no way to kill the enemies, well thats on purpose!</p>
+                    <p>there are so many possibilities, you could give the player a sword, guns, or let them cast really cool spells</p>
+                    <p>or you could just not give the player a weapon and have them run away from the slimes indefinitely.</p>
+                    <p>either way, you should pick something and give it a shot, remember there are tons of resources online and you can ask in #overdrive on slack for help</p>
+                    <p>here are some ideas on what to do next:</p>
+                    <p> - replace the art! the adventures of heidi is cool, but everyone who uses this guide makes it, so you should use your own or find some art (16x16 or something else) on itch.io</p>
+                    <p> - make the level bigger, change the room size, make the camera follow the player, there's so many possibilities!</p>
+                    <p> - make a way for the player to win, what kind of game doesn't have a win condition?</p>
+                    <p> - add some cool mechanics, dashes, teleportation, npcs, its entirely up to you!</p>
+                    <p> i didn't teach you how to do these things, but there are lots of guides and tutorials online to help you out, along with help in the #overdrive slack channel!</p>
+                    <p>happy coding!</p>
+                    <p> - rishabh</p>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>

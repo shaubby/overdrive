@@ -22,6 +22,7 @@ html {
     object-fit: cover;
     z-index: 10;
     image-rendering: pixelated;
+    pointer-events: none;
 }
 .stars {
     position: absolute;
@@ -166,6 +167,18 @@ a {
     height: 29.6%;
     top: 72.5%;
     left: 31.8%;
+    transform: translate(-50%, -50%);
+    border: none;
+    cursor: pointer;
+    image-rendering: pixelated; /* Ensures crisp edges when scaled up */
+    image-rendering: crisp-edges; /* Fallback for better browser compatibility */
+}
+.rpg {
+    position: absolute;
+    width: 21%;
+    height: 69.6%;
+    top: 50.2%;
+    left: 72.7%;
     transform: translate(-50%, -50%);
     border: none;
     cursor: pointer;
